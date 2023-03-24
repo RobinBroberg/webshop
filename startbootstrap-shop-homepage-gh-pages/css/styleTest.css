@@ -8,5 +8,16 @@
     
   }
   .images {
-    width: 100px;
+    width: 200px;
   }
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .price {
+    margin-bottom: 0;
+  }
+  
