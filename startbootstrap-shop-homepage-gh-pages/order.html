@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple HTML Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm" , action="confirmation.html">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" class="form-control" />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" class="form-control" />
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" class="form-control" />
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" class="form-control" />
+
+      <button id="test-btn">Hello</button>
+      <button type="submit" id="submitBtn" class="btn">Submit</button>
+    </form>
+
+    <script src="/startbootstrap-shop-homepage-gh-pages/js/order.js"></script>
+  </body>
+</html>
