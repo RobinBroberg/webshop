@@ -38,7 +38,8 @@ fetch("https://fakestoreapi.com/products")
               <p class="card-text">$${productObject.price}</p>
             </div>
           </div>
-          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <p class="card-text mx-auto">$${product.price}</p>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent mx-auto">
             <div class="text-center">
               <a id="${map.get(
                 productObject
