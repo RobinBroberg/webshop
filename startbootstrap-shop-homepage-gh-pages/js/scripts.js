@@ -23,7 +23,7 @@ fetch('https://fakestoreapi.com/products')
               <p class="card-text">$${product.price}</p>
             </div>
           </div>
-          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent mx-auto">
             <div class="text-center">
               <a class="btn btn-outline-dark mt-auto mt-3" href="#">View options</a>
             </div>
