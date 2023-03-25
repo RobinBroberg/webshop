@@ -6,7 +6,6 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-let products = [];
 let map = new Map();
 fetch("https://fakestoreapi.com/products")
   .then((response) => response.json())
@@ -49,12 +48,16 @@ fetch("https://fakestoreapi.com/products")
         </div>
       `;
       productContainer.appendChild(productDiv);
-
-      products.push();
     });
     map.forEach((value, key) => {
+      const currentProduct = key;
+      // vill skicka vidare currentProduct till order.html
       let anchor = document.getElementById(value);
       anchor.addEventListener("click", (event) => {
+        localStorage.setItem("productId", currentProduct.id);
+        localStorage.setItem("productImage", currentProduct.image);
+        localStorage.setItem("productTitle", currentProduct.title);
+        localStorage.setItem("productPrice", currentProduct.price);
         window.location.href = "order.html";
       });
     });
