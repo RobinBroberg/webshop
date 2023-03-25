@@ -20,9 +20,10 @@ fetch('https://fakestoreapi.com/products')
           <div class="card-body p-4">
             <div class="text-center">
               <h5 class="card-title">${product.title}</h5>
-              <p class="card-text">$${product.price}</p>
+              
             </div>
           </div>
+          <p class="card-text mx-auto">$${product.price}</p>
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent mx-auto">
             <div class="text-center">
               <a class="btn btn-outline-dark mt-auto mt-3" href="#">View options</a>
