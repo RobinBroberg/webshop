@@ -1,17 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Person Information and Product</title>
+    <style>
+      .container {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 500px;
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .info-item {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        font-weight: bold;
+      }
+      span {
+        display: inline-block;
+        width: calc(100% - 100px);
+      }
+      .product-container {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+      }
+      .product-img {
+        max-width: 150px;
+        margin-right: 20px;
+      }
+      .product-info {
+        flex: 1;
+      }
+      .product-info h2 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .product-info p {
+        margin: 0;
+      }
+      .product-price {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is the confirmation page!</h1>
-    <h2 id="ID"></h2>
-    <img id="image" src="" alt="" />
-    <h2 id="title"></h2>
-    <h2 id="price"></h2>
+    <div class="container">
+      <h1>Orderbekräftelse (<span id="order-id" style="display: inline"></span>)</h1>
+      <div class="info-date">
+        <label for="date">Date:</label>
+        <span id="date"></span>
+      </div>
+      <div class="info-item">
+        <label for="name">Namn:</label>
+        <span id="name"></span>
+      </div>
+      <div class="info-item">
+        <label for="email">E-postadress:</label>
+        <span id="email"></span>
+      </div>
+      <div class="info-item">
+        <label for="phone">Telefonnummer:</label>
+        <span id="phone"></span>
+      </div>
+      <div class="info-item">
+        <label for="address">Gatuadress:</label>
+        <span id="address"></span>
+      </div>
+      <div class="info-item">
+        <label for="zipcode">Postnummer:</label>
+        <span id="zipCode"></span>
+      </div>
+      <div class="info-item">
+        <label for="city">Ort:</label>
+        <span id="city"></span>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img id="image" class="product-img" src="" alt="Product Image" />
+      <div class="product-info">
+        <h2 id="title"></h2>
+        <p>Product ID: <span id="ID"></span></p>
+        <p class="price">Price: $ <span id="price"> </span></p>
+      </div>
+    </div>
     <script src="/startbootstrap-shop-homepage-gh-pages/js/confirmation.js"></script>
   </body>
 </html>

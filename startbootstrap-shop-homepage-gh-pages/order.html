@@ -22,23 +22,56 @@
         border-radius: 5px;
         cursor: pointer;
       }
+      h2 {
+        color: red;
+        font-size: 15px;
+      }
+      .hide {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <form id="myForm">
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" name="firstName" class="form-control" />
-
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" name="lastName" class="form-control" />
-
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" class="form-control" />
-
-      <label for="phone">Phone</label>
-      <input type="text" id="phone" name="phone" class="form-control" />
-
-      <button id="test-btn">Hello</button>
+      <label for="name">Namn</label>
+      <input type="text" id="name-input" name="name" class="form-control" />
+      <h2 id="name-error" class="hide">
+        Namnet måste vara minst 2 tecken och max 50 tecken.
+      </h2>
+      <label for="email">E-postadress</label>
+      <input type="text" id="email-input" name="email" class="form-control" />
+      <h2 id="email-error" class="hide">
+        E-postadressen måste innehålla @ och max 50 tecken.
+      </h2>
+      <label for="phone">Telefonnummer</label>
+      <input type="text" id="phone-input" name="phone" class="form-control" />
+      <h2 id="phone-error" class="hide">
+        Telefonnummer får innehålla siffror, bindestreck och parenteser. Max 50
+        tecken
+      </h2>
+      <label for="address">Gatuadress</label>
+      <input
+        type="text"
+        id="address-input"
+        name="address"
+        class="form-control"
+      />
+      <h2 id="address-error" class="hide">
+        Gatuadress: Min 4 tecken och Max 50 tecken
+      </h2>
+      <label for="zip-code">Postnummer</label>
+      <input
+        type="text"
+        id="zipCode-input"
+        name="zip-code"
+        class="form-control"
+      />
+      <h2 id="zipCode-error" class="hide">
+        Postnummer: Exakt 6 tecken i detta format 000 00
+      </h2>
+      <label for="city">Ort</label>
+      <input type="text" id="city-input" name="city" class="form-control" />
+      <h2 id="city-error" class="hide">Ort: Min 2 tecken och Max 50 tecken</h2>
     </form>
     <button id="submitBtn" class="btn">Submit</button>
     <script src="/startbootstrap-shop-homepage-gh-pages/js/order.js"></script>

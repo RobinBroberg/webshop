@@ -1,14 +1,24 @@
-const id = localStorage.getItem("productId");
-const image = localStorage.getItem("productImage");
-const title = localStorage.getItem("productTitle");
-const price = localStorage.getItem("productPrice");
+function generateOrderId() {
+  let orderId = "";
+  for (let i = 0; i < 10; i++) {
+    orderId += Math.floor(Math.random() * 10);
+  }
+  return orderId;
+}
 
-console.log("ID: ", id);
-console.log("image: ", image);
-console.log("Title: ", title);
-console.log("Price: ", price);
-
-document.getElementById("ID").innerHTML = id;
-document.getElementById("image").src = image;
-document.getElementById("title").innerHTML = title;
-document.getElementById("price").innerHTML = price;
+document.getElementById("order-id").innerHTML = generateOrderId();
+document.getElementById("date").innerHTML = new Date()
+  .toISOString()
+  .slice(0, 10);
+document.getElementById("ID").innerHTML = localStorage.getItem("productId");
+document.getElementById("image").src = localStorage.getItem("productImage");
+document.getElementById("title").innerHTML =
+  localStorage.getItem("productTitle");
+document.getElementById("price").innerHTML =
+  localStorage.getItem("productPrice");
+document.getElementById("name").innerHTML = localStorage.getItem("name");
+document.getElementById("email").innerHTML = localStorage.getItem("email");
+document.getElementById("phone").innerHTML = localStorage.getItem("phone");
+document.getElementById("address").innerHTML = localStorage.getItem("address");
+document.getElementById("zipCode").innerHTML = localStorage.getItem("zipCode");
+document.getElementById("city").innerHTML = localStorage.getItem("city");
