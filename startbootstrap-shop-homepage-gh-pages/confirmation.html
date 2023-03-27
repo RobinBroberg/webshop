@@ -2,87 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styleConfirmation.css">
     <title>Person Information and Product</title>
-    <style>
-      .container {
-        border: 1px solid #ddd;
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 500px;
-      }
-      h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-      .info-item {
-        margin-bottom: 10px;
-      }
-      label {
-        display: inline-block;
-        width: 100px;
-        font-weight: bold;
-      }
-      span {
-        display: inline-block;
-        width: calc(100% - 100px);
-      }
-      .product-container {
-        border: 1px solid #ddd;
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 500px;
-        display: flex;
-        align-items: center;
-      }
-      .product-img {
-        max-width: 150px;
-        margin-right: 20px;
-      }
-      .product-info {
-        flex: 1;
-      }
-      .product-info h2 {
-        margin-top: 0;
-        margin-bottom: 5px;
-      }
-      .product-info p {
-        margin: 0;
-      }
-      .product-price {
-        font-size: 24px;
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
-      <h1>Orderbekräftelse (<span id="order-id" style="display: inline"></span>)</h1>
+      <h1>Order confirmation (<span id="order-id" style="display: inline"></span>)</h1>
       <div class="info-date">
         <label for="date">Date:</label>
         <span id="date"></span>
       </div>
       <div class="info-item">
-        <label for="name">Namn:</label>
+        <label for="name">Name:</label>
         <span id="name"></span>
       </div>
       <div class="info-item">
-        <label for="email">E-postadress:</label>
+        <label for="email">E-mail:</label>
         <span id="email"></span>
       </div>
       <div class="info-item">
-        <label for="phone">Telefonnummer:</label>
+        <label for="phone">Telephone number:</label>
         <span id="phone"></span>
       </div>
       <div class="info-item">
-        <label for="address">Gatuadress:</label>
+        <label for="address">Street:</label>
         <span id="address"></span>
       </div>
       <div class="info-item">
-        <label for="zipcode">Postnummer:</label>
+        <label for="zipcode">Post number:</label>
         <span id="zipCode"></span>
       </div>
       <div class="info-item">
-        <label for="city">Ort:</label>
+        <label for="city">City:</label>
         <span id="city"></span>
       </div>
     </div>
@@ -90,6 +41,8 @@
     <div class="product-container">
       <img id="image" class="product-img" src="" alt="Product Image" />
       <div class="product-info">
+        <h1> Ordered product information:</h1>
+        <br>
         <h2 id="title"></h2>
         <p id="description">Description: </p>
         <p>Product ID: <span id="ID"></span></p>
