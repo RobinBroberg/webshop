@@ -12,10 +12,10 @@ document.getElementById("date").innerHTML = new Date()
   .slice(0, 10);
 document.getElementById("ID").innerHTML = localStorage.getItem("productId");
 document.getElementById("image").src = localStorage.getItem("productImage");
-document.getElementById("title").innerHTML =
-  localStorage.getItem("productTitle");
-document.getElementById("price").innerHTML =
-  localStorage.getItem("productPrice");
+document.getElementById("title").innerHTML = localStorage.getItem("productTitle");
+document.getElementById("description").innerHTML = localStorage.getItem("productDescription");
+document.getElementById("price").innerHTML = localStorage.getItem("productPrice");
+document.getElementById("category").innerHTML = localStorage.getItem("productCategory");
 document.getElementById("name").innerHTML = localStorage.getItem("name");
 document.getElementById("email").innerHTML = localStorage.getItem("email");
 document.getElementById("phone").innerHTML = localStorage.getItem("phone");

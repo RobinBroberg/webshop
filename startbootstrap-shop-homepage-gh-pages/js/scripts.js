@@ -25,6 +25,8 @@ fetch("https://fakestoreapi.com/products")
         image: product.image,
         title: product.title,
         price: product.price,
+        description: product.description,
+        category: product.category,
       };
       map.set(productObject, "buy-button-" + productObject.id);
       productDiv.innerHTML = `
@@ -58,6 +60,8 @@ fetch("https://fakestoreapi.com/products")
         localStorage.setItem("productImage", currentProduct.image);
         localStorage.setItem("productTitle", currentProduct.title);
         localStorage.setItem("productPrice", currentProduct.price);
+        localStorage.setItem("productDescription", currentProduct.description);
+        localStorage.setItem("productCategory", currentProduct.category);
         window.location.href = "order.html";
       });
     });
