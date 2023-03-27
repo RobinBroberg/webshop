@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/styleOrder.css">
-    <title>Simple HTML Order Form</title>
+    <title>Simple HTML Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      h2 {
+        color: red;
+        font-size: 15px;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
   </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">Webshop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>                 
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
   <body>
     <h1>Order form</h1>
     <p>
@@ -50,7 +96,7 @@
       <input type="text" id="city-input" name="city" class="form-control" />
       <h2 id="city-error" class="hide">Ort: Min 2 tecken och Max 50 tecken</h2>
     </form>
-    <button id="submitBtn" class="btn">Submit</button>
+    <button id="submitBtn" class="subbtn">Submit</button>
     <script src="/startbootstrap-shop-homepage-gh-pages/js/order.js"></script>
   </body>
 </html>
