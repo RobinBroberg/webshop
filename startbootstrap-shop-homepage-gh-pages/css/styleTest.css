@@ -20,4 +20,26 @@
   .price {
     margin-bottom: 0;
   }
+  .footer{
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    color: white;
+  }
+  .fa-twitter {
+    color: white;
+  }
+  .fa-instagram {
+    color: white;
+  }
+  
   
