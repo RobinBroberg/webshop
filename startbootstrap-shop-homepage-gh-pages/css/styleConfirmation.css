@@ -1,12 +1,24 @@
+.border {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
 .confirmation-container {
+    width: 50%;
     border: 1px solid #ddd;
-    padding: 20px;
+    float: left;
+    padding: 20px ;
     margin: 20px auto;
-    max-width: 500px;
+
   }
   h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    align-items: flex-start;
   }
   .info-item {
     margin-bottom: 10px;
@@ -21,11 +33,11 @@
     width: calc(100% - 100px);
   }
   .product-container {
+    width: 50%;
     border: 1px solid #ddd;
-    padding: 20px;
+    float: right;
+    padding: 20px 5%;
     margin: 20px auto;
-    max-width: 500px;
-    display: flex;
     align-items: center;
   }
   .product-img {
