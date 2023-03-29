@@ -38,8 +38,11 @@
           </div>
       </div>
   </nav>
+    
+  <div class="grid-container"> 
     <div class="confirmation-container">
       <h1>Order confirmation (<span id="order-id" style="display: inline"></span>)</h1>
+      <br>
       <div class="info-date">
         <label for="date">Date:</label>
         <span id="date"></span>
@@ -66,21 +69,22 @@
       </div>
       <div class="info-item">
         <label for="city">City:</label>
-        <span id="city"></span>
+        <span id="city"></span>  
       </div>
     </div>
 
+    
     <div class="product-container">
-      <img id="image" class="product-img" src="" alt="Product Image" />
-      <div class="product-info">
         <h1> Ordered product information:</h1>
         <br>
-        <h2 id="title"></h2>
-        <p id="description">Description: </p>
-        <p>Product ID: <span id="ID"></span></p>
-        <p class="price">Price: $ <span id="price"> </span></p>
-        <p>Category: <span id="category"></span></p>
-      </div>
+        <img id="image" class="product-img" src="" alt="Product Image"/>
+        <div class="product-info">
+          <h2 id="title"></h2>
+          <p id="description">Description: </p>
+          <p>Product ID: <span id="ID"></span></p>
+          <p class="price">Price: $ <span id="price"> </span></p>
+          <p>Category: <span id="category"></span></p>
+        </div>
     </div>
   </div>
     <footer class="footer bg-dark">
