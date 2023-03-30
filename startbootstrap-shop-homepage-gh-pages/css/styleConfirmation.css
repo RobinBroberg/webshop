@@ -8,6 +8,7 @@
     margin-right: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
+    margin-top: 50px;
 }
 .confirmation-container {
     display: grid;
@@ -15,6 +16,14 @@
     float: left;
     padding: 20px;
     margin: 0 auto;
+  }
+  .product-container {
+    display: grid;
+    border: 1px solid #ddd;
+    float: right;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center; 
   }
   h1 {
     font-size: 16px;
@@ -33,14 +42,7 @@
     display: inline-block;
     width: calc(100% - 100px);
   }
-  .product-container {
-    display: grid;
-    border: 1px solid #ddd;
-    float: right;
-    padding: 20px;
-    margin: 0 auto;
-    align-items: center; 
-  }
+  
   .product-img {
     max-width: 150px;
     margin-right: 20px;
