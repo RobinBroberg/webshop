@@ -15,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styleConfirmation.css">
     <link rel="stylesheet" href="css/styleTest.css">
   </head>
   <body>
@@ -41,8 +42,10 @@
       </nav> 
     
   <div class="grid-container"> 
-    <div class="confirmation-container">
-      <h1>Order confirmation (<span id="order-id" style="display: inline"></span>)</h1>
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="confirmation-container">
+      <h2>Order confirmation (<span id="order-id" style="display: inline"></span>)</h2>
       <br>
       <div class="info-date">
         <label for="date">Date:</label>
@@ -72,24 +75,26 @@
         <label for="city">City:</label>
         <span id="city"></span>  
       </div>
+      </div>
     </div>
-
+  </div>  
     
-    <div class="product-container">
-        <h1> Ordered product information:</h1>
+    <div class="grid-container"> 
+      <div class="row">
+      <div class="col-sm-12">  
+        <div class="product-container">
+        <h3> Ordered product information:</h3>
         <br>
         <img id="image" class="product-img" src="" alt="Product Image"/>
         <div class="product-info">
-          <h2 id="title"></h2>
+          <h3 id="title" class="produkt-info h4"></h3>
           <p id="description">Description: </p>
           <p>Product ID: <span id="ID"></span></p>
           <p class="price">Price: $ <span id="price"> </span></p>
           <p>Category: <span id="category"></span></p>
+        </div>  
         </div>
-    </div>
-
-
-  </div>
+      </div>
     <footer class="footer bg-dark">
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>
