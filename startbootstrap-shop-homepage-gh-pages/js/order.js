@@ -72,7 +72,7 @@ function checkAddress() {
 }
 
 function checkZipCode() {
-  const regexp = /^\d{5}$/;
+  const regexp = /^(\d{5}|\d{3}\s\d{2})$/;
   const zipCodeInput = document.getElementById("zipCode-input");
   if (regexp.test(zipCodeInput.value)) {
     document.getElementById("zipCode-error").classList.add("hide");
