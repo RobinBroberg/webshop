@@ -1,32 +1,25 @@
 .border {
     box-sizing: border-box;
 }
-.grid-container {
-    display: grid;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 30px;
 }
-.confirmation-container {
-    display: grid;
-    border: 1px solid #ddd;
-    float: left;
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  .product-container {
-    display: grid;
-    border: 1px solid #ddd;
-    float: right;
-    padding: 20px;
-    margin: 0 auto;
-    align-items: center; 
-    margin-top: 50px;
-  }
+
+.confirmation-container,
+.product-container {
+  flex-basis: 45%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  
+}
   h1 {
     font-size: 16px;
     margin-bottom: 10px;
