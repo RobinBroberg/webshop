@@ -51,18 +51,19 @@
       <label for="name">Name</label>
       <input type="text" id="name-input" name="name" class="form-control" />
       <h2 id="name-error" class="hide">
-        Namnet måste vara minst 2 tecken och max 50 tecken.
+        The name must be between 2 and 50 characters.
       </h2>
       <label for="email">E-mail</label>
       <input type="text" id="email-input" name="email" class="form-control" />
       <h2 id="email-error" class="hide">
-        E-postadressen måste innehålla @ och max 50 tecken.
+        The email address must contain @ and be max 50 characters.
       </h2>
       <label for="phone">Telephone number</label>
       <input type="text" id="phone-input" name="phone" class="form-control" />
       <h2 id="phone-error" class="hide">
         Telefonnummer får innehålla siffror, bindestreck och parenteser. Max 50
         tecken
+        The phonenumber can only contain character "0-9", "-" and "()"
       </h2>
       <label for="address">Street</label>
       <input
@@ -72,7 +73,7 @@
         class="form-control"
       />
       <h2 id="address-error" class="hide">
-        Gatuadress: Min 4 tecken och Max 50 tecken
+        Address must be between 4 and 50 characters.
       </h2>
       <label for="zip-code">Post number</label>
       <input
@@ -82,11 +83,11 @@
         class="form-control"
       />
       <h2 id="zipCode-error" class="hide">
-        Postnummer: Exakt 5 tecken i detta format 00000 eller 000 00
+        Postnumber: must be 5 digits in either format 123 45 / 12345
       </h2>
       <label for="city">City</label>
       <input type="text" id="city-input" name="city" class="form-control" />
-      <h2 id="city-error" class="hide">Ort: Min 2 tecken och Max 50 tecken</h2>
+      <h2 id="city-error" class="hide">City: must be between 2 and 50 characters.</h2>
     </form>
     <button id="submitBtn" class="subbtn btn-secondary  bg-dark">Submit</button>
       </div>
