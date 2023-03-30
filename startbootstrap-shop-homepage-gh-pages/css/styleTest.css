@@ -54,6 +54,15 @@
   .content-wrap {
     padding-bottom: 7.5rem;    /* Footer height */
   }
-  
+  .btn-bold:hover { 
+    font-weight: bold;
+    color: #212529 !important;
+    border-color: #212529;
+  }
+  .bold-font{
+    font-weight: 700;
+    font-size: 18px;
+    
+  }
   
   
