@@ -9,6 +9,7 @@
   }
   .images {
     width: 200px;
+    margin-top: 20px;
   }
   .card-footer {
     display: flex;

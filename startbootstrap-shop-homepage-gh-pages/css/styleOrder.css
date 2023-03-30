@@ -18,6 +18,9 @@ label {
     border-radius: 5px;
     cursor: pointer;
   }
+  .subbtn:hover{
+    font-weight: 600;
+  }
   h2 {
     color: red;
     font-size: 15px;
