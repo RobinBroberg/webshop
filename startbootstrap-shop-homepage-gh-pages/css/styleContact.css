@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
     padding-bottom: 100px;
   }
   
@@ -15,7 +14,7 @@ body {
     margin: 0 auto;
     padding: 40px 0;
     font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
+    color: #0c0b0b;
     text-transform: uppercase;
     letter-spacing: 6px;
   }
@@ -41,8 +40,7 @@ body {
   .form-control, 
   textarea {
     max-width: 400px;
-    background-color: #000;
-    color: #fff;
+    color: #0c0b0b;
     letter-spacing: 1px;
     margin-bottom: 10px;
   }
@@ -86,13 +84,13 @@ body {
   
   .list-item {
     line-height: 4;
-    color: #aaa;
+    color: #0c0b0b;
   }
   
   .contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
-    color: #bbb;
+    color: #0c0b0b;
   }
   
   .place {
@@ -108,13 +106,13 @@ body {
   }
   
   .contact-text a {
-    color: #bbb;
+    color: #0c0b0b;
     text-decoration: none;
     transition-duration: 0.2s;
   }
   
   .contact-text a:hover {
-    color: #fff;
+    color: #9c2b2b;
     text-decoration: none;
   }
   
@@ -157,7 +155,7 @@ body {
     line-height: 60px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px #0c0b0b;
     transition: all .2s ease-in-out;
   }
   
@@ -177,7 +175,7 @@ body {
   
   .copyright {
     font: 200 14px 'Oswald', sans-serif;
-    color: #555;
+    color: #0c0b0b;
     letter-spacing: 1px;
     text-align: center;
   }
