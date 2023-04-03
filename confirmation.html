@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="css/styleConfirmation.css">
+    <title>Person Information and Product</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!--Social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styleConfirmation.css">
+    <link rel="stylesheet" href="css/styleTest.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="content-wrap">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container px-4 px-lg-5">
+              <a class="navbar-brand" href="#!">Webshop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>                 
+                  </ul>
+                  <form class="d-flex">
+                      <button class="btn btn-outline-dark" type="submit">
+                          <i class="bi-cart-fill me-1"></i>
+                          Cart
+                          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </nav> 
+    
+  <div class="flex-container"> 
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="confirmation-container bg-light">
+      <h2>Order confirmation (<span id="order-id" style="display: inline"></span>)</h2>
+      <br>
+      <div class="info-date">
+        <label for="date">Date:</label>
+        <span id="date"></span>
+      </div>
+      <div class="info-item">
+        <label for="name">Name:</label>
+        <span id="name"></span>
+      </div>
+      <div class="info-item">
+        <label for="email">E-mail:</label>
+        <span id="email"></span>
+      </div>
+      <div class="info-item">
+        <label for="phone">Telephone number:</label>
+        <span id="phone"></span>
+      </div>
+      <div class="info-item">
+        <label for="address">Street:</label>
+        <span id="address"></span>
+      </div>
+      <div class="info-item">
+        <label for="zipcode">Post number:</label>
+        <span id="zipCode"></span>
+      </div>
+      <div class="info-item">
+        <label for="city">City:</label>
+        <span id="city"></span>  
+      </div>
+      </div>
+    </div>
+  </div>  
+      <div class="row">
+      <div class="col-sm-12">  
+        <div class="product-container bg-light">
+        <h2 class="text-center"> Ordered product</h2>
+        <br>
+        <img id="image" class="product-img img" src="" alt="Product Image"/>
+        <div class="product-info">
+          <h3 id="title" class="produkt-info h4"></h3>
+          <p id="description">Description: </p>
+          <br>
+          <p class="fw-bold">Product ID: <span id="ID"></span></p>
+          <p class="price fw-bold">Price: $ <span id="price"> </span></p>
+          <p class="fw-bold">Category: <span id="category"></span></p>
+        </div>  
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+      <footer class="footer bg-dark">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <p>Copyright &copy; 2023 Shop in Style </p>
+    </footer>
+  </div>
+    <script src="/startbootstrap-shop-homepage-gh-pages/js/confirmation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
